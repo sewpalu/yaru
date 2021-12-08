@@ -493,12 +493,12 @@
 //
   $gradient: linear-gradient(to top, darken($c, 0%), lighten($c, 0%)); // Yaru change: no gradients
 
-  @if $variant == 'dark' { $gradient: linear-gradient(to top, lighten($c, 6%), lighten($c, 6%)); } // Yaru change: no gradients
+  @if $variant == 'dark' { $gradient: linear-gradient(to top, lighten($c, 0%), lighten($c, 0%)); } // Yaru change: no gradients
 
   @if $ov != none { background: $c $ov, $gradient; }
   @else { background: $c $gradient; }
 
-  box-shadow: inset 0 1px $hc; // top highlight
+  // box-shadow: inset 0 1px $hc; // top highlight
 }
 
 @mixin overshoot($p, $t:normal, $c:$fg_color) {
